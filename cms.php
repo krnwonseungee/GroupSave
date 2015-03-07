@@ -38,9 +38,10 @@
 
 	<? require "cms.footer.php"; ?>
 
-	<script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-	<script src='/js/hack.js'></script>
+    <script src='/js/underscore-min.js'></script>
+    <script src='/js/hack.js'></script>
 	<?
 		if (is_array($jsFileList))
 			while(list(,$jsfile) = each($jsFileList)) {
