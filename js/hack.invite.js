@@ -69,22 +69,15 @@ function toggleFriendSelectedStatus () {
   })
 }
 
+//WIP POSTING TO NEXMO API
 function submitSelectedFriends() {
   $('#submit-selected').on("click", function () {
     $.ajax({
-      url: "/serviceProxy.php?url=http://lomostreet.com/api.php/h/agi",
-      type: "POST",
-      data: {
-        "uid":1,
-        "topic":"Trip to Hawaii",
-        "desc":"Lets make a trip to hawaii together!! Just $500 each!!",
-        "dateFrom":"2015-03-10",
-        "dateTo":"2015-03-17",
-        "amt":"500",
-        "inviteTo":"2,4"
-      }
-    }).done(function (data) {
-
+      url: "https://rest.nexmo.com/sms/json?api_key=83860b00&api_secret=d7480873&from=12013514516&to=15107897856&text=Welcome+to+Nexmo",
+      type: "POST"
+    }).done(function(data) {
+      console.log(data)
     })
   })
 }
+
