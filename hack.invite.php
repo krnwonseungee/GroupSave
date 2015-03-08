@@ -5,6 +5,7 @@
   </div>
 <div class="search-bar">
   <input type="text" name="friendName">
+  <button id="submit-selected">Invite Friends</button>
 </div>
 <div class="friend-list">
 </div>
