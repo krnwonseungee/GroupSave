@@ -1,0 +1,37 @@
+.trip {
+	display:block;
+	width: 230px;
+	height: 180px;
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	top:0;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.trip:hover .img-thumbnail{
+	opacity: .5;
+}
+
+#user {
+	z-index: 9999;
+}
+
+.trip span.text-content,
+.trip img {
+	display: block;
+	position:absolute;
+	right:0;left:0; bottom:0;
+}
+
+.trip span.text-content {
+  color: black;
+  opacity:0;
+  font-size: 200%;
+  text-align: center;
+}
+
+.trip:hover span.text-content {
+  opacity:1;
+}
